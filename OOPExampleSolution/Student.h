@@ -18,8 +18,49 @@ public:
 		_class = 0;
 		gender = 'nb';
 		alive = false;
-		mark = 0;
+		mark = 4;
 
+	}
+	Student(string name,string sname) {
+		firstname = name;
+		surname = sname;
+		age = 0;
+		_class = 0;
+		gender = 'nb';
+		alive = false;
+		mark = 4;
+
+	}
+	Student(string name, string sname,int a) {
+		firstname = name;
+		surname = sname;
+		age = a;
+		_class = 0;
+		gender = 'nb';
+		alive = false;
+		mark = 4;
+
+	}
+	Student(string name, string sname, int a,int cl,char g, bool al,
+		double m) {
+		firstname = name;
+		surname = sname;
+		age = a;
+		_class = cl;
+		gender = g;
+		alive = al;
+		mark = m;
+
+	}
+
+	Student(const Student& student) {
+		firstname = student.firstname;
+		surname = student.surname;
+		age = student.age;
+		_class = student._class;
+		gender = student.gender;
+		alive = student.alive;
+		mark = student.mark;
 	}
 
 	string toString() {
