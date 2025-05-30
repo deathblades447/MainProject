@@ -52,6 +52,9 @@ public:
 		mark = m;
 
 	}
+	~Student() {
+		cout << "destructor" << endl;
+	}
 
 	Student(const Student& student) {
 		firstname = student.firstname;
