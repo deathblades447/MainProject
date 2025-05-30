@@ -11,6 +11,17 @@ public:
 	char gender;
 	bool alive;
 
+	Student() {
+		firstname = "no name";
+		surname = "no surname";
+		age = 0;
+		_class = 0;
+		gender = 'nb';
+		alive = false;
+		mark = 0;
+
+	}
+
 	string toString() {
 		string s = firstname;
 		s += " " + surname;
